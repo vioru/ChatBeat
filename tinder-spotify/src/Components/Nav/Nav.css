@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+.left-section {
+    display: flex;
+    align-items: center;
+}
+  
+.logo {
+    width: 100px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.left-section span {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 40px; 
+    color: #000; 
+}
+  
+.middle-section, .right-section {
+    display: flex;
+    align-items: center;
+}
+  
+.middle-section span {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px; 
+    color: #000; 
+    margin-right: 10px; 
+    cursor: pointer;
+}
+  
+.right-section button {
+    background-color: #B53550; 
+    border: 2px solid #B53550; 
+    border-radius: 15px;
+    color: white; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer;
+}

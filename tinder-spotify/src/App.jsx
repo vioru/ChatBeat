@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import Home from './Components/Home/Home';
+import Navbar from './Components/Nav/Nav';
+import Seccion from './Components/Seccion/Seccion';
+import Login from './Paginas/Login/Login';
+import EmailLogin from './Paginas/EmailLogin/EmailLogin';
+import RecuperarContraseña from './Paginas/EmailLogin/RecuperarContraseña'
+import NuevaContraseña from './Paginas/EmailLogin/NuevaContraseña';
+import CrearCuentaConCelular from './Paginas/CrearCuentaConCelular/CrearCuentaConCelular';
+import CrearCuenta from './Paginas/CrearCuenta/CrearCuenta';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    return (
+        <Router>
+            <div>
+                <Navbar showLoginButton={!isLoggedIn} />
+                <Routes>
+                     
+                    <Route exact path="/" element={<Seccion />} />
+                    <Route path="/login" element={<Login />} /> 
+                    <Route path="/email-login" element={<EmailLogin />} />
+                    <Route path="/recuperar-contraseña" element={<RecuperarContraseña />} />
+                    <Route path="/nueva-contraseña" element={<NuevaContraseña />} />
+                    <Route path="/crear-cuenta-con-celular" element={<CrearCuentaConCelular />} />
+                    <Route path="/crear-cuenta" element={<CrearCuenta />} />
+                </Routes>
+            </div>
+        </Router>
+    );
+};
 
-export default App
+export default App;
+
+
+

@@ -1,0 +1,26 @@
+.seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; 
+}
+
+.logo-center {
+    width: 150px; 
+    height: auto; 
+    margin-bottom: 15px; 
+}
+  
+.seccion-title {
+    margin: 50px 0; 
+    text-align: center
+}
+  
+button {
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: #B53550; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+}
