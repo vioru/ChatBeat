@@ -4,18 +4,18 @@ import './EmailLogin.css';
 
 const EmailLogin = () => {
   return (
-    <div className="email-login-container">
-      <h1>Iniciar Sesión</h1>
+    <form className="email-login-container">
+      <h1 className="email-login-title">Iniciar Sesión</h1>
       <div className="input-container">
-        <label>Email</label>
-        <input type="email" placeholder="Correo Electrónico" />
-        <label>Password</label>
-        <input type="password" placeholder="Contraseña" />
+        <label className="email-login-label">Email</label>
+        <input className="email-login-input" type="email" placeholder="Email" />
+        <label className="email-login-label">Password</label>
+        <input className="email-login-input" type="password" placeholder="Password" />
       </div>
-        <Link to="/recuperar-contraseña">¿Olvidaste tu contraseña?</Link>
-        <button className='continuar'>Continuar</button>
-      <p>Al hacer clic en continuar, aceptas nuestros <Link to="/terms">Términos y Condiciones</Link>. Conoce cómo procesamos tus datos en nuestra <Link to="/privacy-policy">Política de privacidad</Link> y Políticas sobre cookies.</p>
-    </div>
+      <Link to="/recuperar-contraseña" className="email-login-link">¿Olvidaste tu contraseña?</Link>
+      <button className="email-login-button continuar">Continuar</button>
+      <p className="email-login-paragraph">Al hacer clic en continuar, aceptas nuestros Términos y Condiciones. Conoce cómo procesamos tus datos en nuestra className="email-login-link" Política de privacidad y Políticas sobre cookies.</p>
+    </form>
   );
 };
 

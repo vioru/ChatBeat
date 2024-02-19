@@ -1,13 +1,14 @@
 .login-container {
+    position: relative;
     width: 417px;
     height: 555px;
-    border: 1px solid #e0e0e0; 
+    border: 1px solid #e0e0e0;
     border-radius: 10px;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    padding: 20px; 
-    margin: auto; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px auto; 
 }
   
 .google-button, .other-button {
@@ -57,4 +58,15 @@ h2{
 
 .link {
     text-decoration: none; 
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #000;
 }

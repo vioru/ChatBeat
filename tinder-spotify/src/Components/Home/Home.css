@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.card {
+    width: 749px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.card-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+  
+.card-images img {
+    width: 100%;
+}
+  
+.paragraph {
+    width: 547px;
+    font-size: 21.6px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.boton-container {
+    text-align: center;
+    margin-top: -150px; 
+}

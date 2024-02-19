@@ -5,17 +5,17 @@ import './RecuperarContraseña.css';
 const RecuperarContraseña = () => {
     return (
         <div className="recuperar-contraseña-container">
-            <h1>Recuperar Contraseña</h1>
-            <p>A continuación ingresa el correo con que te registraste para enviarte un código con el cual puedes reestablecer tu contraseña.</p>
+            <h1 className="recuperar-contraseña-title">Recuperar Contraseña</h1>
+            <p className="recuperar-contraseña-description">A continuación ingresa el correo con que te registraste para enviarte un código con el cual puedes reestablecer tu contraseña.</p>
             <div className="input-container">
-                <label>Ingresa tu Email</label>
-                <input type="email" placeholder="Correo Electrónico" />
+                <label className="recuperar-contraseña-label">Ingresa tu Email</label>
+                <input className="recuperar-contraseña-input" type="email" placeholder="Correo Electrónico" />
             </div>
-            <p>¿No recibiste el código? <span>Reenviar código</span></p>
+            <p className="recuperar-contraseña-resend">¿No recibiste el código? <span>Reenviar código</span></p>
             <Link to="/nueva-contraseña">
-                <button className="continuar">Continuar</button>
+                <button className="recuperar-contraseña-button continuar">Continuar</button>
             </Link>
-            <p>Al hacer clic en continuar, aceptas nuestros <Link to="/terms">Términos y Condiciones</Link>. Conoce cómo procesamos tus datos en nuestra <Link to="/privacy-policy">Política de privacidad</Link> y Políticas sobre cookies.</p>
+            <p className="recuperar-contraseña-terms">Al hacer clic en continuar, aceptas nuestros Términos y Condiciones. Conoce cómo procesamos tus datos en nuestra Política de privacidad y Políticas sobre cookies.</p>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/logo.png';
+import log from '../../assets/log.png';
 import google from '../../assets/google.png';
 import signo from '../../assets/signo.png';
 import AppStore from '../../assets/AppStore.png';
@@ -11,7 +11,7 @@ import './CrearCuenta.css';
 const CrearCuenta = () => {
     return (
       <div className="login-container">
-        <img src={logo} alt="Logo" className="login-logo" /> 
+        <img src={log} alt="Logo" className="login-logo" /> 
         <h1>Crea tu Cuenta</h1>
            <button className="google-button">
               <img src={google} alt="Google Logo" className="button-icon" /> 

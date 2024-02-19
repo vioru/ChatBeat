@@ -1,15 +1,16 @@
 .nueva-contraseña-container {
-    width: 795px;
-    height: 861px;
+    width: 500px;
+    height: 620px;
+    border: 1px solid #000;
     margin: auto; 
-    border: 1px solid #000; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 70px;
 }
 
-.nueva-contraseña-container h1 {
+.nueva-contraseña-title {
     width: 263px;
     height: 38px;
     text-align: center;
@@ -17,34 +18,33 @@
 }
 
 .input-container {
-    width: 528px;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.input-container label {
+.nueva-contraseña-label {
     width: 143px;
     height: 20px;
     margin-bottom: 5px;
 }
 
-.input-container input[type="text"],
-.input-container input[type="password"] {
-    width: 528px;
-    height: 56px;
+.nueva-contraseña-input {
+    width: 70%;
+    height: 40px;
     margin-bottom: 20px;
 }
 
-p > span {
+.nueva-contraseña-resend span {
     width: 133px;
     height: 24px;
 }
 
-.continuar {
-    width: 532px;
-    height: 64px;
+.nueva-contraseña-button {
+    width: 65%;
+    height: 70px;
     background-color: #b53550;
     color: #ffffff;
     font-size: 18px;
@@ -53,9 +53,8 @@ p > span {
     margin-top: 20px;
 }
 
-.nueva-contraseña-container p:last-of-type {
-    width: 795px;
-    height: 29px;
+.nueva-contraseña-terms {
+    width: 90%;
     text-align: center;
     margin-top: 20px;
 }
