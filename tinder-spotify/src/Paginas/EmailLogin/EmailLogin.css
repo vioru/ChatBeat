@@ -39,12 +39,15 @@
 .continuar {
     width: 70%; 
     height: 50px; 
-    font-size: 1em; 
+    font-size: 1.2em;
+    line-height: 50px;
     background-color: #b53550;
     color: #ffffff;
     border: none;
     border-radius: 10px;
     margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .email-login-paragraph {
