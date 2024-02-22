@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import celuizq from '../../assets/celuizq.png'
-import celuCentro from '../../assets/celuCentro.png'
-import celuDer from '../../assets/celuDer.png'
+import banner from '../../assets/banner.png';
 import Nav from '../../Components/Nav/Nav';
 import BotonPin from '../Button/BotonPrincipal/BotonPin';
 import DescargaApp from '../Seccion/DescargaApp/DescargaApp';
@@ -19,9 +17,7 @@ const Home = () => {
         <div className="container"> 
             <div className="card">
             <div className="card-images"> 
-                <img src={celuizq} alt="Imagen 1" />
-                <img src={celuCentro} alt="Imagen 2" />
-                <img src={celuDer} alt="Imagen 3" />
+                <img src={banner} alt="Imagen 1" />
             </div>
             <p className="paragraph">La música une corazones en una conexión perdurable</p> 
             </div>

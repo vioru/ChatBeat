@@ -8,7 +8,6 @@ const EmailLogin = () => {
 
   const handleContinuarClick = () => {
     // Lógica de autenticación y redirección
-    // Por ejemplo, podrías verificar las credenciales aquí
 
     // Si la autenticación es exitosa, navega al home privado
     //navigate('/home-privado');

@@ -7,13 +7,13 @@ import './Nav.css';
 
 const Navbar = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-  
+    
     const openModal = () => {
-      setIsModalOpen(true);
+        setIsModalOpen(true);
     };
-  
+
     const closeModal = () => {
-      setIsModalOpen(false);
+        setIsModalOpen(false);
     };
   
     return (
@@ -27,7 +27,7 @@ const Navbar = () => {
           {isModalOpen && <AboutUsModal onClose={closeModal} />}
         </div>
         <div className="right-section">
-          <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to="/login">
             <BotonPin texto="Iniciar Sesión" />
           </Link>
         </div>
