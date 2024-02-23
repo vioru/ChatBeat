@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './SideNav.css';
+
+import Dropdown from '../../../Components/Nav/dropdown/dropdown'; 
 
 import log from '../../../assets/log.png';
 import foto from '../../../assets/foto.png';
@@ -12,9 +14,19 @@ import homeb from '../../../assets/homeb.png';
 import salidab from '../../../assets/salidab.png';
 
 const SideNav = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
+
+  const handleLogoClick = () => {
+    setIsDropdownOpen(true); 
+  };
+
+  const handleCloseDropdown = () => {
+    setIsDropdownOpen(false); 
+  };
+
   return (
     <div className="SideNav">
-      <div className="logo logo-container">
+      <div className="logo logo-container"  onClick={handleLogoClick} >
         <img className="logo-image" src={log} alt="Logo" style={{ filter: 'brightness(0) invert(1)' }} />
       </div>
       <Link to="/editar-perfil" className="profile-picture profile-picture-container" style={{ marginTop: '50px' }} >
@@ -52,6 +64,7 @@ const SideNav = () => {
           </button>
         </div>
       </div>
+      {isDropdownOpen && <Dropdown onCloseDropdown={handleCloseDropdown} />}
     </div>
   );
 };
