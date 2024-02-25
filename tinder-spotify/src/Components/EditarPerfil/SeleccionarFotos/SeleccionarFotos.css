@@ -1,0 +1,77 @@
+.seleccionar-fotos-container {
+    position: relative;
+    width: 590px;
+    height: 740px;
+    border: 2px solid rgb(221, 215, 215);
+    border-radius: 10px;
+    padding: 20px;
+    left: 1150px;
+    top: -1300px;
+}
+
+.titulo-foto {
+    font-size: 25px; 
+    width: 100%;
+    margin-left: 25px;
+}
+  
+.cerrar-x {
+    margin-left: 250px;
+}
+
+.cuadritos {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.cuadrito {
+    width: 160px;
+    height: 225px;
+    border: 2px solid #df7a90; 
+    border-radius: 20px;
+    margin: 10px; 
+}
+
+.botones-seleccion {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 80px; 
+  }
+  
+.boton-cancelar {
+    width: 201px; 
+    height: 52px; 
+    background-color: #b53550; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    transition: background-color 0.3s ease; 
+}
+
+.boton-guardar {
+    width: 237px; 
+    height: 51px; 
+    background-color: #107B50;
+    color: #ffffff; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    transition: background-color 0.3s ease; 
+}
+
+.boton-cancelar:hover {
+    background-color: #8e222f;
+}
+
+.boton-guardar:hover {
+    background-color: #0a5937;
+}
