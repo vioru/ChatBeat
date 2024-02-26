@@ -10,6 +10,13 @@
     margin-top: 70px;
 }
 
+.nuevaCo {
+    position: absolute;
+    top: 90px;
+    right: 800px;
+    cursor: pointer;
+}
+
 .nueva-contraseña-title {
     width: 263px;
     height: 38px;
@@ -43,14 +50,21 @@
 }
 
 .nueva-contraseña-button {
-    width: 65%;
-    height: 70px;
+    width: 50%;
+    height: 50px;
     background-color: #b53550;
     color: #ffffff;
     font-size: 18px;
     border: none;
     border-radius: 10px;
     margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.nueva-contraseña-button:hover {
+    background-color: #8e222f;
 }
 
 .nueva-contraseña-terms {

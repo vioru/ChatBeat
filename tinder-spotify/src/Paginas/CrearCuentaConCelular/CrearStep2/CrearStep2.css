@@ -12,15 +12,12 @@
     margin-top: 70px;
 }
 
-.cerrar {
-    position: absolute; 
-    top: 10px;
-    right: 10px;
+.Step2 {
+    position: absolute;
+    top: 12px;
+    right: 12px;
     cursor: pointer;
-    font-size: 20px;
-    color: #555;
-    z-index: 1; 
-}
+  }
 
 .cerrar:hover {
     color: #888;
@@ -49,8 +46,18 @@
 }
 
 .crear-step2-paragraph {
-    font-size: 14px; 
+    font-size: 18px; 
     margin-bottom: 20px; 
+}
+
+.crear-step2-alert {
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    background-color:#d40000;
+    border-radius: 10px;
+    width: auto;
+    padding: 5px 40px;
 }
 
 .crear-step2-span {
@@ -66,8 +73,14 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    line-height: 40px;
 }
 
-.continuar {
+.crear-step2-button:hover {
+    background-color: #8e222f;
+  }
+
+.contiStep2 {
     margin-top: 20px;
+    text-decoration: none;
 }

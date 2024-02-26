@@ -5,7 +5,7 @@ import lapiz from '../../../assets/lapiz.png';
 import flechaIzqui from '../../../assets/flechaIzqui.png';
 import flechaDere from '../../../assets/flechaDere.png';
 
-const FotosPerfil = () => {
+const FotosPerfil = ({ porcentajeCarga }) => {
 
   return (
     <div className="fotos-perfil-container">
@@ -19,9 +19,9 @@ const FotosPerfil = () => {
       <button className="boton-elegir-perfil">Elegir Perfil</button>
       <div className="barra-carga-container">
         <div className="barra-carga">
-          <div className="carga-completa"></div>
+          <div className="carga-completa" style={{ width: `${porcentajeCarga}%` }} ></div>
         </div>
-        <div className="redondela"></div>
+        <div className="redondela" style={{ right: `calc(100% - ${porcentajeCarga}%)` }} ></div>
       </div>
     </div>
   );

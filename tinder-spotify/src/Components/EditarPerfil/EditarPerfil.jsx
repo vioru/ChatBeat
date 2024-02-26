@@ -9,23 +9,27 @@ import MusicaReciente from '../EditarPerfil/MusicaReciente/MusicaReciente';
 import ActividadFisica from '../EditarPerfil/ActividadFisica/ActividadFisica';
 import GenerosFavoritos from '../EditarPerfil/GenerosFavoritos/GenerosFavoritos';
 import InteraccionSocial from '../EditarPerfil/InteraccionSocial/InteraccionSocial';
+import BotonMe from '../../Components/Button/BotonMediano/BotonMe';
 import ControladorFotos from '../EditarPerfil/ControladorFotos/ControladorFotos';
 
 const EditarPerfil = () => {
   return (
     <> 
-      <SideNav />
-      <Titulo />
-      <div className="editar-perfil-container">
-           <Perfil />
-           <Genero />
-           <DescripcionTextarea />
-           <MusicaReciente />
-           <ActividadFisica />
-           <GenerosFavoritos />
-           <InteraccionSocial />
-      </div>
-      <ControladorFotos />
+        <div className="cont-pri-perf">
+          <SideNav />
+          <Titulo />
+          <div className="editar-perfil-container">
+              <Perfil />
+              <Genero />
+              <DescripcionTextarea />
+              <MusicaReciente />
+              <ActividadFisica />
+              <GenerosFavoritos />
+              <InteraccionSocial />
+          </div>
+          <BotonMe texto="Guardar"/>
+          <ControladorFotos />
+        </div>
     </>
   );
 };
