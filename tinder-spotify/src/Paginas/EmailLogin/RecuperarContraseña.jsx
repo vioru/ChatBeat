@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './RecuperarContraseña.css'; 
+import './RecuperarContraseña.css';
+
+import CloseIcon from '../../Components/Iconos/CloseIcon/CloseIcon';
 
 const RecuperarContraseña = () => {
+    const handleCloseClick = () => {
+        window.location.href = '/';
+    };
     return (
         <div className="recuperar-contraseña-container">
+            <Link to="/" className="recuperClo" onClick={handleCloseClick}>
+              <CloseIcon />
+            </Link>
             <h1 className="recuperar-contraseña-title">Recuperar Contraseña</h1>
             <p className="recuperar-contraseña-description">A continuación ingresa el correo con que te registraste para enviarte un código con el cual puedes reestablecer tu contraseña.</p>
             <div className="input-container">

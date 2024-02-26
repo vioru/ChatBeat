@@ -11,6 +11,13 @@
     margin-top: 70px;
 }
 
+.recuperClo {
+    position: absolute;
+    top: 90px;
+    right: 800px;
+    cursor: pointer;
+}
+
 .recuperar-contraseña-title {
     width: 200px;
     height: 38px;
@@ -50,7 +57,7 @@
 
 .recuperar-contraseña-button {
     width: 200px;
-    height: 60px;
+    height: 50px;
     background-color: #b53550;
     color: #ffffff;
     font-size: 18px;
@@ -59,6 +66,10 @@
     margin-top: 20px;
 }
 
+.recuperar-contraseña-button:hover {
+    background-color: #8e222f;
+}
+  
 .recuperar-contraseña-terms {
     width: 90%;
     margin-top: 20px;

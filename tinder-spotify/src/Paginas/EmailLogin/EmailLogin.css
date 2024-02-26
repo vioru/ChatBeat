@@ -17,6 +17,13 @@
     margin-bottom: 20px; 
 }
 
+.EmailLog {
+    position: absolute;
+    top: 90px;
+    right: 800px;
+    cursor: pointer;
+}
+
 .input-container {
     width: 85%; 
     margin-bottom: 20px; 
@@ -36,7 +43,7 @@
     font-size: 15px; 
 }
 
-.continuar {
+.continuarEm {
     width: 70%; 
     height: 50px; 
     font-size: 1.2em;
@@ -48,6 +55,20 @@
     margin-top: 20px;
     cursor: pointer;
     text-decoration: none;
+}
+
+.continuarEm:hover {
+    background-color: #8e222f;
+}
+
+.alert-message {
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    background-color:#d40000;
+    border-radius: 10px;
+    width: auto;
+    padding: 5px 40px;
 }
 
 .email-login-paragraph {

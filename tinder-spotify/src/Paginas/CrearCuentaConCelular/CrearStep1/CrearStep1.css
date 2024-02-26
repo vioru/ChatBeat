@@ -11,10 +11,10 @@
   margin-top: 70px;
 }
 
-.cerrar {
+.Step1 {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 90px;
+  right: 800px;
   cursor: pointer;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .crear-step1-paragraph {
-  font-size: 14px; 
+  font-size: 15px; 
   margin-bottom: 20px; 
 }
 
@@ -68,6 +68,10 @@
   cursor: pointer;
 }
 
-.continuar {
+.crear-step1-button:hover {
+  background-color: #8e222f;
+}
+
+.contiStep {
   margin-top: 20px;
 }

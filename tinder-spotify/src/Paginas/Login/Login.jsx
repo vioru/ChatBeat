@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import CloseIcon from '../../Components/Iconos/CloseIcon/CloseIcon';
+
 import log from '../../assets/log.png'
 import google from '../../assets/google.png'
 import signo from '../../assets/signo.png'
@@ -10,12 +12,14 @@ import './Login.css';
 
 const Login = () => {
     const handleCloseClick = () => {
-        window.close();
+        window.location.href = '/';
     };
 
     return (
         <div className="login-container">
-            <button className="close-button" onClick={handleCloseClick}>X</button>
+            <Link className="close-button" onClick={handleCloseClick}>
+                <CloseIcon />
+            </Link>
             <img src={log} alt="Logo" className="login-logo" />
             <h1>Inicia Sesión</h1>
             <button className="google-button">
