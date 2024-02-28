@@ -1,0 +1,31 @@
+.CardInfeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 40px;
+    box-sizing: border-box;
+}
+
+.CardInfeItem {
+    margin: 15px;
+
+}
+
+
+.CardInfeItem img {
+    width: 80%;
+    height:200px;
+    object-fit: contain;
+}
+
+.CardInfeItem p {
+    text-align: center;
+    
+ 
+}
+
+.CardInfeItem p br {
+    display: block;
+    content: "";
+    margin-top: 10px;
+}

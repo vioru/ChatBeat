@@ -1,0 +1,19 @@
+@import url('../../Components/StyleVariables/Color.css'); 
+
+.footer {
+    color:var(--regular-font-color); 
+    padding: 20px;
+    text-align: center; 
+  
+    font-weight: bold; /* Agrega esta línea para establecer el texto en negrita */
+    margin-bottom: 50px;
+  }
+
+  hr{
+    opacity: 50%;
+    margin-bottom: 100px;
+  }
+
+.sobre-nosotros {
+  font-size: 21.6px;
+}

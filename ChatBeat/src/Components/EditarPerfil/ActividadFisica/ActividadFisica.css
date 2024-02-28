@@ -1,0 +1,51 @@
+@import url('../../StyleVariables/Color.css');
+
+.contenedor-con-borde-bo {
+    border: 1px solid var(--primary-color);
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.titulo-actividad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.boton-menos {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.botones-actividad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.BotonChico {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    flex-grow: 1;
+    max-width: calc(33.33% - 10px);
+}
+
+.BotonChico:nth-last-child(-n+3) {
+    flex-grow: 0;
+}
+
+.boton-menos {
+    background-color: var(--primary-color);
+    color: var(--buttonOn-font-color);
+    ;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 112px;
+}
